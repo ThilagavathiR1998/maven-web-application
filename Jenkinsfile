@@ -2,9 +2,9 @@ node{
 
 def mavenhome = tool name: "maven3.8.8"
 
-    echo "The node name is: $(env.NODE_NAME)"
-    echo "The job name is: $(env.JOB_NAME)"
-    echo "The Build name is: $(env.BUILD_NUMBER)"
+    echo "The node name is: ${env.NODE_NAME} "
+    echo "The job name is: ${env.JOB_NAME} "
+    echo "The Build name is: ${env.BUILD_NUMBER}"
 //checkout SCM 
 stage('github to jenkins'){
 
